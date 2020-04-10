@@ -1,2 +1,2 @@
-# spring-noot-prime-wildfly
+# spring-boot-prime-wildfly
 Ejemplo de creación de proyecto primefaces integrado con Wildfly
