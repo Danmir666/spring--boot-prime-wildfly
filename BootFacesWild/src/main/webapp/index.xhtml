@@ -1,0 +1,22 @@
+<ui:composition template="/WEB-INF/Plantilla/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="content">
+        <h:form id="form">
+            <div class="row">
+                <div class="col-md-6">
+                    <p:outputLabel value="#{inicioMB.holaMundo}" />
+                </div>
+                <div class="col-md-6">
+                    <p:commandButton value="Dar Clic"
+                                     actionListener="#{inicioMB.saludar()}"
+                                     update="@form"
+                                     />
+                </div>
+            </div>
+        </h:form>
+    </ui:define>
+</ui:composition>
